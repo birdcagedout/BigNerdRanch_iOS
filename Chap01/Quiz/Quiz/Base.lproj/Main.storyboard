@@ -16,46 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1g-0f-2hk">
-                                <rect key="frame" x="190.66666666666666" y="111" width="33" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1g-0f-2hk">
+                                <rect key="frame" x="194.66666666666666" y="108" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpt-CO-lZb">
-                                <rect key="frame" x="140.66666666666666" y="169" width="132.99999999999997" height="35"/>
+                                <rect key="frame" x="140.66666666666666" y="159" width="132.99999999999997" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next Question"/>
                                 <connections>
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3X-nt-DLu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-HP-b9P">
+                                <rect key="frame" x="194.66666666666666" y="298" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyV-RS-POQ">
-                                <rect key="frame" x="143.66666666666666" y="357" width="126.99999999999997" height="35"/>
+                                <rect key="frame" x="143.66666666666666" y="356" width="126.99999999999997" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Answer"/>
                                 <connections>
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZW-vJ-CEf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-HP-b9P">
-                                <rect key="frame" x="189" y="301" width="35" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uyV-RS-POQ" firstAttribute="top" secondItem="ybW-HP-b9P" secondAttribute="bottom" constant="35" id="0HM-ix-y0l"/>
-                            <constraint firstItem="J1g-0f-2hk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Cu-qK-DKg"/>
-                            <constraint firstItem="J1g-0f-2hk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="GdM-QN-ChK"/>
-                            <constraint firstItem="ybW-HP-b9P" firstAttribute="top" secondItem="qpt-CO-lZb" secondAttribute="bottom" constant="97" id="Vfb-vk-87a"/>
-                            <constraint firstItem="J1g-0f-2hk" firstAttribute="centerX" secondItem="qpt-CO-lZb" secondAttribute="centerX" id="czb-zy-2De"/>
-                            <constraint firstItem="qpt-CO-lZb" firstAttribute="top" secondItem="J1g-0f-2hk" secondAttribute="bottom" constant="37" id="gjm-5a-yqi"/>
-                            <constraint firstItem="uyV-RS-POQ" firstAttribute="centerX" secondItem="qpt-CO-lZb" secondAttribute="centerX" id="njY-8V-9lZ"/>
-                            <constraint firstItem="ybW-HP-b9P" firstAttribute="centerX" secondItem="qpt-CO-lZb" secondAttribute="centerX" id="yKb-qW-My1"/>
+                            <constraint firstItem="ybW-HP-b9P" firstAttribute="centerX" secondItem="qpt-CO-lZb" secondAttribute="centerX" id="66E-YA-nlI"/>
+                            <constraint firstItem="J1g-0f-2hk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="77O-mb-6kk"/>
+                            <constraint firstItem="J1g-0f-2hk" firstAttribute="centerX" secondItem="qpt-CO-lZb" secondAttribute="centerX" id="8Jz-Mc-Qg2"/>
+                            <constraint firstItem="uyV-RS-POQ" firstAttribute="top" secondItem="ybW-HP-b9P" secondAttribute="bottom" constant="37" id="As2-Ff-EN5"/>
+                            <constraint firstItem="ybW-HP-b9P" firstAttribute="top" secondItem="qpt-CO-lZb" secondAttribute="bottom" constant="104" id="Hcw-gi-EHf"/>
+                            <constraint firstItem="uyV-RS-POQ" firstAttribute="centerX" secondItem="qpt-CO-lZb" secondAttribute="centerX" id="K2x-e1-jgn"/>
+                            <constraint firstItem="qpt-CO-lZb" firstAttribute="top" secondItem="J1g-0f-2hk" secondAttribute="bottom" constant="30" id="Sai-tC-HBS"/>
+                            <constraint firstItem="J1g-0f-2hk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qPc-A5-AfJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99" y="-7"/>
+            <point key="canvasLocation" x="98.550724637681171" y="-7.3660714285714279"/>
         </scene>
     </scenes>
     <resources>
