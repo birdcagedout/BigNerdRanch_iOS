@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,34 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-Ou-yHH">
-                                <rect key="frame" x="151.66666666666666" y="52.000000000000007" width="110.99999999999997" height="83.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김재형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-Ou-yHH">
+                                <rect key="frame" x="116" y="94" width="182" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdZ-97-4yi">
-                                <rect key="frame" x="59.666666666666657" y="143.66666666666666" width="295" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="님은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdZ-97-4yi">
+                                <rect key="frame" x="175.66666666666666" y="186" width="63" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-qA-Jwj">
-                                <rect key="frame" x="84" y="337.66666666666669" width="246" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조낸 울트라 캡쑝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0U-cZ-J7b">
+                                <rect key="frame" x="29" y="236.99999999999997" width="356.33333333333331" height="65.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ad-SB-wjQ">
-                                <rect key="frame" x="148.66666666666666" y="245.66666666666663" width="116.99999999999997" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="천재" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ad-SB-wjQ">
+                                <rect key="frame" x="112.00000000000001" y="310.66666666666669" width="190.33333333333337" height="131.33333333333331"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0U-cZ-J7b">
-                                <rect key="frame" x="150" y="194.66666666666666" width="114" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입니다!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-qA-Jwj">
+                                <rect key="frame" x="150" y="450" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -51,7 +52,7 @@
                         <constraints>
                             <constraint firstItem="8ad-SB-wjQ" firstAttribute="centerX" secondItem="fdZ-97-4yi" secondAttribute="centerX" id="3Cn-f1-XhZ"/>
                             <constraint firstItem="V0U-cZ-J7b" firstAttribute="centerX" secondItem="fdZ-97-4yi" secondAttribute="centerX" id="ElA-vs-vYS"/>
-                            <constraint firstItem="kHh-Ou-yHH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Fv3-4t-qPN"/>
+                            <constraint firstItem="kHh-Ou-yHH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Fv3-4t-qPN"/>
                             <constraint firstItem="8W9-qA-Jwj" firstAttribute="top" secondItem="8ad-SB-wjQ" secondAttribute="bottom" constant="8" id="KUj-eW-Dlc"/>
                             <constraint firstItem="V0U-cZ-J7b" firstAttribute="top" secondItem="fdZ-97-4yi" secondAttribute="bottom" constant="8" id="Lyu-1j-69u"/>
                             <constraint firstItem="8ad-SB-wjQ" firstAttribute="top" secondItem="V0U-cZ-J7b" secondAttribute="bottom" constant="8" id="Ts7-Gl-JiV"/>
@@ -61,10 +62,31 @@
                             <constraint firstItem="fdZ-97-4yi" firstAttribute="top" secondItem="kHh-Ou-yHH" secondAttribute="bottom" constant="8" id="pPP-bg-zWR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="kHh-Ou-yHH" id="aqE-cb-7vg"/>
+                        <outlet property="label2" destination="fdZ-97-4yi" id="bvx-Xr-gM1"/>
+                        <outlet property="label3" destination="V0U-cZ-J7b" id="oer-Xt-WgP"/>
+                        <outlet property="label4" destination="8ad-SB-wjQ" id="i8a-M7-UZv"/>
+                        <outlet property="label5" destination="8W9-qA-Jwj" id="3ac-EQ-9QD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-28.125"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

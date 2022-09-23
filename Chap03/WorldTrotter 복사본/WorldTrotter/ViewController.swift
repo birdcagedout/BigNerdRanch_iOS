@@ -9,6 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 	
+	@IBOutlet var label1: UILabel! = UILabel()
+	@IBOutlet var label2: UILabel! = UILabel()
+	@IBOutlet var label3: UILabel! = UILabel()
+	@IBOutlet var label4: UILabel! = UILabel()
+	@IBOutlet var label5: UILabel! = UILabel()
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -21,6 +27,7 @@ class ViewController: UIViewController {
 //		let secondView = UIView(frame: secondFrame)
 //		secondView.backgroundColor = UIColor.green
 //		firstView.addSubview(secondView)
+		
 		
 		
 		let colors: [CGColor] = [
@@ -41,10 +48,16 @@ class ViewController: UIViewController {
 		
 		let colorAnimation = CABasicAnimation(keyPath: "colors")
 		colorAnimation.toValue = changeColors
-		colorAnimation.duration = 3
+		colorAnimation.duration = 2
 		colorAnimation.autoreverses = true
 		colorAnimation.repeatCount = .infinity
 		gradientLayer.add(colorAnimation, forKey: "colorChangeAnimation")
+		
+		view.addSubview(label1)
+		view.addSubview(label2)
+		view.addSubview(label3)
+		view.addSubview(label4)
+		view.addSubview(label5)
 	}
 
 }
