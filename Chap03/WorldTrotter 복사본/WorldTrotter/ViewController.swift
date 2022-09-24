@@ -15,6 +15,11 @@ class ViewController: UIViewController {
 	@IBOutlet var label4: UILabel! = UILabel()
 	@IBOutlet var label5: UILabel! = UILabel()
 	
+	@IBOutlet var space1: UILabel! = UILabel()
+	@IBOutlet var space2: UILabel! = UILabel()
+	@IBOutlet var space3: UILabel! = UILabel()
+	@IBOutlet var space4: UILabel! = UILabel()
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -27,7 +32,6 @@ class ViewController: UIViewController {
 //		let secondView = UIView(frame: secondFrame)
 //		secondView.backgroundColor = UIColor.green
 //		firstView.addSubview(secondView)
-		
 		
 		
 		let colors: [CGColor] = [
@@ -53,10 +57,19 @@ class ViewController: UIViewController {
 		colorAnimation.repeatCount = .infinity
 		gradientLayer.add(colorAnimation, forKey: "colorChangeAnimation")
 		
+		space1.text = ""
+		space2.text = ""
+		space3.text = ""
+		space4.text = ""
+		
 		view.addSubview(label1)
+		view.addSubview(space1)
 		view.addSubview(label2)
+		view.addSubview(space2)
 		view.addSubview(label3)
+		view.addSubview(space3)
 		view.addSubview(label4)
+		view.addSubview(space4)
 		view.addSubview(label5)
 	}
 
