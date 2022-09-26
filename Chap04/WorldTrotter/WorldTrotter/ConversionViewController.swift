@@ -70,12 +70,23 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
 	
 	// UITextFieldDelegate 프로토콜 구현
 	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-		let existingTextSeparator = textField.text?.ranges(of: ".")
-		let newTextSeparator = string.ranges(of: ".")
-		if existingTextSeparator != nil && newTextSeparator != nil {
+		
+		// 소수점 중복 방지
+		let existingTextSeparator = textField.text?.range(of: ".")		// 원래 텍스트필드에 .이 없으면 nil
+		let newTextSeparator = string.range(of: ".")					// 새로운 텍스트필드 입력에 .이 없으면 nil
+
+		if existingTextSeparator != nil && newTextSeparator != nil {	// 원래 텍스트필드에 .이 있고, 새로운 입력에도 .이 있으면
 			return false
-		} else {
-			return true
 		}
+		
+		// 알파벳 걸러내기
+		let alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		let alphaCharacters = CharacterSet(charactersIn: alpha)
+		guard string.rangeOfCharacter(from: alphaCharacters) == nil else {
+			return false
+		}
+		
+		return true
+		
 	}
 }
