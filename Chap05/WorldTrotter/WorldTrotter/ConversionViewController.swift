@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+// TextField의 이벤트를 처리하는 delegate객체 = 현재의 뷰컨트롤러 객체인 ConversionViewController
+// 이렇게 하기 위해 UITextFieldDelegate 프로포콜을 준수하도록
 class ConversionViewController: UIViewController, UITextFieldDelegate {
 	
 	@IBOutlet var textField: UITextField!
@@ -52,10 +55,10 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
 //		print(isMetric, currencySymbol)								// 대한민국: metric Optional("₩"), 스페인: metric Optional("€")
 	}
 	
-	// 텍스트필드 값이 바뀌면 ==> 저장 프로퍼티 fahrenheitValue
+	// 텍스트필드 값이 바뀌면 ==> 저장 프로퍼티 fahrenheitValue에 저장
 	@IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
-		if let textinput = textField.text, let value = Double(textinput) {
-			fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
+		if let textinput = textField.text, let number = numberFormatter.number(from: textinput) {
+			fahrenheitValue = Measurement(value: number.doubleValue, unit: .fahrenheit)
 		} else {
 			fahrenheitValue = nil
 		}
@@ -76,26 +79,26 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
 	}
 	
 	// UITextFieldDelegate 프로토콜 구현
-	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString newString: String) -> Bool {
 		
 		// 소수점 중복 방지
 		let currentLocale = Locale.current
 		let localeSeparator = currentLocale.decimalSeparator ?? "."					// 1000단위 자리표(없으면 .)
+		
 		let existingTextSeparator = textField.text?.range(of: localeSeparator)		// 원래 텍스트필드에 .이 없으면 nil
-		let newTextSeparator = string.range(of: localeSeparator)					// 새로운 텍스트필드 입력에 .이 없으면 nil
+		let newTextSeparator = newString.range(of: localeSeparator)					// 새로운 텍스트필드 입력에 .이 없으면 nil
 
-		if existingTextSeparator != nil && newTextSeparator != nil {				// 원래 텍스트필드에 .이 있고, 새로운 입력에도 .이 있으면
+		if existingTextSeparator != nil && newTextSeparator != nil {				// 원래 텍스트필드에 .이 있고, 새로운 입력에도 .이 있으면 ==> 입력 거부
 			return false
 		}
 		
 		// 알파벳 걸러내기
 		let alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 		let alphaCharacters = CharacterSet(charactersIn: alpha)
-		guard string.rangeOfCharacter(from: alphaCharacters) == nil else {
+		guard newString.rangeOfCharacter(from: alphaCharacters) == nil else {
 			return false
 		}
 		
 		return true
-		
 	}
 }
